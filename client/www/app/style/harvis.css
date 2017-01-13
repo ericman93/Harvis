@@ -14,9 +14,12 @@ ion-content::before {
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.6;
+  opacity: 0.8;
   background-repeat: no-repeat;
   background-size: cover; }
+
+ion-content.night::before {
+  background-image: url("../homepage/images/night.gif"); }
 
 ion-content.Clouds::before {
   background-image: url("../homepage/images/cloudy.gif"); }
