@@ -1,5 +1,15 @@
-<ion-view view-title="Browse">
-  <ion-content>
-    YOOO
+<ion-view>
+  <ion-content ng-class="weather.desc">
+    <div id="weather">
+      <span id="temperature">{{weather.temperature | number:0}}°C</span>
+      <span id="desc">{{weather.desc}}</span>
+    </div>
+    <div id="fact" ng-if="fact">
+      <div class="card">
+        <div class="item item-text-wrap">
+          {{fact}}
+        </div>
+      </div>
+    </div>
   </ion-content>
 </ion-view>

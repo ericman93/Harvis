@@ -1,3 +1,17 @@
-.menu .bar-header {
-    background-color: red;
+ion-side-menu{
+  &.menu .bar-header{
+    background-color: $secondery-color;
+
+    .title {
+      color: white;
+    }
+  }
+
+  ion-content {
+    padding: 0;
+  }
+
+  //.item{
+  //  border: 0;
+  //}
 }

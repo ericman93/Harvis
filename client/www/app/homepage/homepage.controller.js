@@ -1,15 +1,24 @@
 angular.module('harvis.homepage')
-  .controller('HomepageCtrl', ['$scope',
-    function($scope){
+  .controller('HomepageCtrl', ['$scope', 'Weather', 'Fact',
+    function($scope, Weather, Fact){
       function getWeather(){
-        $scope.weather = {
-          temperature: 17
-        }
+        Weather.getWeather().then(function(weather){
+          $scope.weather = weather;
+        })
+      }
+
+      function getFact(){
+        Fact.getFact().then(function(fact){
+          $scope.fact = fact;
+        });
       }
 
       function init(){
         getWeather();
+        getFact();
       }
+
+      init();
     }
   ]
 );

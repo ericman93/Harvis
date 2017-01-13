@@ -1,0 +1,41 @@
+ion-content {
+  &::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &.Clouds::before {
+    background-image: url("../homepage/images/cloudy.gif");
+  }
+
+  #fact{
+    padding-top: 10%;
+
+    .item{
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+
+  #weather {
+    padding-top: 10%;
+
+    #temperature {
+      font-size: 500%;
+    }
+    #desc {
+      font-size: 200%;
+      display: block;
+      padding-top: 10px;
+    }
+  }
+}
