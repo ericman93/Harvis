@@ -4,4 +4,8 @@
 
 ion-content{
   padding: 15%;
+
+  &.has-header{
+    padding-top: 10%;
+  }
 }

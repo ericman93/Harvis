@@ -3,7 +3,7 @@ ion-side-menu.menu .bar-header {
   ion-side-menu.menu .bar-header .title {
     color: white; }
 
-ion-side-menu ion-content {
+ion-side-menu ion-content.has-header {
   padding: 0; }
 
 ion-content::before {
@@ -38,3 +38,5 @@ ion-content #weather {
 
 ion-content {
   padding: 15%; }
+  ion-content.has-header {
+    padding-top: 10%; }
