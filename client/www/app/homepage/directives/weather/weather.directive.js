@@ -6,7 +6,7 @@ angular.module('harvis.homepage')
       controller: ['$scope', 'Weather',
         function ($scope, Weather) {
           var weatherIcons = {
-            'Rain': 'ion-waterdrop',
+            'Rain': 'ion-umbrella',
             'Clouds': 'ion-android-cloud'
           };
 
