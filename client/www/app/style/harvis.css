@@ -21,6 +21,9 @@ ion-content::before {
 ion-content.night::before {
   background-image: url("../homepage/images/night.gif"); }
 
+ion-content.rain::before {
+  background-image: url("../homepage/images/rain.gif"); }
+
 ion-content.Clouds::before {
   background-image: url("../homepage/images/cloudy.gif"); }
 

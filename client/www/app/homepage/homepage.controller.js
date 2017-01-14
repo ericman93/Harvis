@@ -27,9 +27,16 @@ angular.module('harvis.homepage')
           });
         }
 
+        function getAlarms(){
+          $scope.alarms = [
+            '10:00pm'
+          ]
+        }
+
         function init() {
           getWeather();
           getFact();
+          getAlarms()
         }
 
         init();

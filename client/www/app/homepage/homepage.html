@@ -11,5 +11,14 @@
         </div>
       </div>
     </div>
+    <div id="alarms" ng-if="alarms">
+      <div class="card">
+        <div class="item item-text-wrap">
+          <span ng-repeat="alarm in alarms">
+             <span class="icon ion-ios-alarm"></span> {{alarm}}
+          </span>
+        </div>
+      </div>
+    </div>
   </ion-content>
 </ion-view>
