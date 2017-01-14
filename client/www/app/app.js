@@ -6,9 +6,10 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('harvis.homepage', []);
 angular.module('harvis.lights', []);
+angular.module('harvis.alarms', []);
 angular.module('harvis.menu', []);
 angular.module('harvis.core', ['harvis.menu']);
-angular.module('harvis', ['ionic', 'harvis.homepage', 'harvis.lights', 'harvis.core'])
+angular.module('harvis', ['ionic', 'harvis.homepage', 'harvis.alarms', 'harvis.lights', 'harvis.core'])
 
   .run(function ($ionicPlatform) {
     $ionicPlatform.ready(function () {
@@ -52,6 +53,16 @@ angular.module('harvis', ['ionic', 'harvis.homepage', 'harvis.lights', 'harvis.c
           'menuContent': {
             templateUrl: 'app/lights/lights.html',
             controller: 'LightsCtrl'
+          }
+        }
+      })
+
+      .state('app.alarms', {
+        url: '/alarms',
+        views: {
+          'menuContent': {
+            templateUrl: 'app/alarms/alarms.html',
+            controller: 'AlarmsCtrl'
           }
         }
       });
