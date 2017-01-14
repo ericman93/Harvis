@@ -1,10 +1,12 @@
 import requests
+import feedparser
 from random import randint
 
 class FunFactProvider(object):
 	def __init__(self):
 		self.providers = [
-			RandomYearFact()
+			#RandomYearFact()
+			ReditTILProvider()
 		]
 
 	def get_fact(self):
@@ -19,5 +21,7 @@ class RandomYearFact(object):
 
 class ReditTILProvider(object):
 	def get_fact(self):
-		# Get fact from TIL subreddit 
-		pass
+		feed = feedparser.parse('https://www.reddit.com/r/todayilearned/.rss')
+		items = feed['items']
+
+		return items[randint(0, len(items) - 1)]['title']	
