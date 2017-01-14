@@ -21,7 +21,7 @@ ion-content::before {
 ion-content.night::before {
   background-image: url("../homepage/images/night.gif"); }
 
-ion-content.rain::before {
+ion-content.Rain::before {
   background-image: url("../homepage/images/rain.gif"); }
 
 ion-content.Clouds::before {
@@ -45,4 +45,5 @@ ion-content #weather {
 ion-content {
   padding: 15%; }
   ion-content.has-header {
-    padding-top: 10%; }
+    padding-top: 10%;
+    overflow-y: hidden; }
