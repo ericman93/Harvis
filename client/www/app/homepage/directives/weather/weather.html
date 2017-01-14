@@ -1,4 +1,9 @@
 <div id="weather">
-  <span id="temperature">{{weather.temperature | number:0}}°C</span>
-  <span id="desc">{{weather.desc}}</span>
+  <div>
+    <span id="temperature">{{weather.temperature | number:0}}°C</span>
+  </div>
+  <div id="desc">
+    <span class="icon" ng-class="weather.icon"></span>
+    <span>{{weather.desc}}</span>
+  </div>
 </div>

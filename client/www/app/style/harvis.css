@@ -39,7 +39,6 @@ ion-content #weather {
     font-size: 500%; }
   ion-content #weather #desc {
     font-size: 200%;
-    display: block;
     padding-top: 10px; }
 
 ion-content {
