@@ -41,6 +41,24 @@ ion-content #weather {
     font-size: 200%;
     padding-top: 10px; }
 
+#alarms-content {
+  background-color: #0e0a1b;
+  color: white; }
+  #alarms-content .scroll {
+    height: 100%; }
+    #alarms-content .scroll #add-alarm {
+      position: fixed;
+      bottom: 0;
+      left: calc(50% - 30px);
+      height: 60px;
+      width: 60px;
+      line-height: 50px;
+      text-align: center;
+      background-color: #6b46e5;
+      border-radius: 50%;
+      color: white;
+      font-size: 300%; }
+
 ion-content {
   padding: 15%; }
   ion-content.has-header {

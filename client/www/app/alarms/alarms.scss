@@ -1,0 +1,26 @@
+$button-size: 60;
+
+#alarms-content {
+  background-color: #0e0a1b;
+  color: white;
+  
+  .scroll {
+    height: 100%;
+
+    #add-alarm{
+      position: fixed;
+      bottom: 0;
+      left: calc(50% - #{$button-size/2}px);
+      height: #{$button-size}px;
+      width: #{$button-size}px;
+      line-height: #{$button-size - 10}px;
+      text-align: center;
+
+      background-color: #6b46e5;
+      border-radius: 50%;
+
+      color: white;
+      font-size: 300%;
+    }
+  }
+}
