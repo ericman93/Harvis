@@ -1,10 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<div>
+  <span class="time">{{item.time}}</span>
+  <label class="toggle">
+    <input type="checkbox" ng-model="item.active">
+    <div class="track">
+      <div class="handle"></div>
+    </div>
+  </label>
+  <div class="extra-data">
+    <div ng-if="item.rain">
+      <span>If rain: </span><span>{{item.rain}}</span>
+    </div>
+  </div>
+</div>
 
-</body>
-</html>

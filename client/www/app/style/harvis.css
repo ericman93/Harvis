@@ -46,6 +46,15 @@ ion-content #weather {
   color: white; }
   #alarms-content .scroll {
     height: 100%; }
+    #alarms-content .scroll alarm {
+      padding: 200px; }
+      #alarms-content .scroll alarm .time {
+        font-size: 400%; }
+      #alarms-content .scroll alarm .toggle {
+        float: right; }
+        #alarms-content .scroll alarm .toggle input:checked + .track {
+          background-color: #6b46e5;
+          border-color: #6b46e5; }
     #alarms-content .scroll #add-alarm {
       position: fixed;
       bottom: 0;

@@ -1,3 +1,14 @@
-/**
- * Created by Eric on 15/01/2017.
- */
+angular.module('harvis.homepage')
+  .directive('alarm', function () {
+    return {
+      scope: {
+        'item': '='
+      },
+      templateUrl: 'app/alarms/directives/alarm/alarm.html',
+      controller: ['$scope',
+        function ($scope) {
+
+        }
+      ]
+    }
+  });

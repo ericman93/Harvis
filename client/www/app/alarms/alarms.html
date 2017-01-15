@@ -1,6 +1,8 @@
 <ion-view view-title="Alarms" id="alarms-content">
   <ion-content>
-    Alarms
+    <div id="alarms">
+      <alarm ng-repeat="item in alarms" item="item"></alarm>
+    </div>
     <div id="add-alarm">+</div>
   </ion-content>
 </ion-view>

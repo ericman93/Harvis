@@ -1,11 +1,29 @@
 $button-size: 60;
+$secondery-color: #6b46e5;
 
 #alarms-content {
   background-color: #0e0a1b;
   color: white;
-  
+
   .scroll {
     height: 100%;
+
+    alarm{
+      padding: 200px;
+
+      .time{
+        font-size: 400%;
+      }
+
+      .toggle{
+        float: right;
+
+        input:checked + .track{
+          background-color: $secondery-color;
+          border-color: $secondery-color;
+        }
+      }
+    }
 
     #add-alarm{
       position: fixed;
@@ -16,7 +34,7 @@ $button-size: 60;
       line-height: #{$button-size - 10}px;
       text-align: center;
 
-      background-color: #6b46e5;
+      background-color: $secondery-color;
       border-radius: 50%;
 
       color: white;
