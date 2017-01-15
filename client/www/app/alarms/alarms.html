@@ -1,7 +1,10 @@
 <ion-view view-title="Alarms" id="alarms-content">
   <ion-content>
-    <div id="alarms">
-      <alarm ng-repeat="item in alarms" item="item"></alarm>
+    <div id="alarms" class="alarm">
+      <div ng-repeat="item in alarms">
+        <alarm item="item"></alarm>
+        <hr ng-hide="$last">
+      </div>
     </div>
     <div id="add-alarm">+</div>
   </ion-content>

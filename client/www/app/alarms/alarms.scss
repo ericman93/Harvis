@@ -2,30 +2,37 @@ $button-size: 60;
 $secondery-color: #6b46e5;
 
 #alarms-content {
-  background-color: #0e0a1b;
+  background-color: #241a44;
   color: white;
 
   .scroll {
     height: 100%;
 
-    alarm{
-      padding: 200px;
+    .alarm {
+      hr {
+        margin: 20px 0 20px 0;
+        opacity: 0.3;
+      }
 
-      .time{
+      .extra-data {
+        padding-top: 10px;
+      }
+
+      .time {
         font-size: 400%;
       }
 
-      .toggle{
+      .toggle {
         float: right;
 
-        input:checked + .track{
+        input:checked + .track {
           background-color: $secondery-color;
           border-color: $secondery-color;
         }
       }
     }
 
-    #add-alarm{
+    #add-alarm {
       position: fixed;
       bottom: 0;
       left: calc(50% - #{$button-size/2}px);

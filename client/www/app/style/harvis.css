@@ -29,9 +29,6 @@ ion-content.Clouds::before {
 
 ion-content #fact {
   padding-top: 10%; }
-  ion-content #fact .item {
-    padding-top: 30px;
-    padding-bottom: 30px; }
 
 ion-content #weather {
   padding-top: 10%; }
@@ -42,19 +39,22 @@ ion-content #weather {
     padding-top: 10px; }
 
 #alarms-content {
-  background-color: #0e0a1b;
+  background-color: #241a44;
   color: white; }
   #alarms-content .scroll {
     height: 100%; }
-    #alarms-content .scroll alarm {
-      padding: 200px; }
-      #alarms-content .scroll alarm .time {
-        font-size: 400%; }
-      #alarms-content .scroll alarm .toggle {
-        float: right; }
-        #alarms-content .scroll alarm .toggle input:checked + .track {
-          background-color: #6b46e5;
-          border-color: #6b46e5; }
+    #alarms-content .scroll .alarm hr {
+      margin: 20px 0 20px 0;
+      opacity: 0.3; }
+    #alarms-content .scroll .alarm .extra-data {
+      padding-top: 10px; }
+    #alarms-content .scroll .alarm .time {
+      font-size: 400%; }
+    #alarms-content .scroll .alarm .toggle {
+      float: right; }
+      #alarms-content .scroll .alarm .toggle input:checked + .track {
+        background-color: #6b46e5;
+        border-color: #6b46e5; }
     #alarms-content .scroll #add-alarm {
       position: fixed;
       bottom: 0;
