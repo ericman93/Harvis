@@ -14,13 +14,13 @@ ion-content {
     background-size: cover;
   }
   &.night::before {
-    background-image: url("../homepage/images/night.gif");
+    background-image: url("../../images/night.gif");
   }
   &.Rain::before {
-    background-image: url("../homepage/images/rain.gif");
+    background-image: url("../../images/rain.gif");
   }
   &.Clouds::before {
-    background-image: url("../homepage/images/cloudy.gif");
+    background-image: url("../../images/cloudy.gif");
   }
 
   #fact{

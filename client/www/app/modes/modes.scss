@@ -1,0 +1,51 @@
+#modes-content {
+  &::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../images/sky.gif");
+  }
+
+  ion-content {
+    padding: 0;
+
+    .card {
+      padding: 0;
+
+      .mode-icon {
+        text-align: center;
+        font-size: 500%;
+      }
+
+      &.romantic {
+        .mode-icon {
+          background-color: #a92d2d;
+          .icon {
+            color: white;
+          }
+        }
+      }
+
+      &.work {
+        .mode-icon {
+          background-color: #7f7fdd;
+        }
+      }
+
+      &.morning{
+        .mode-icon{
+          background-color: #efef79;
+        }
+      }
+    }
+  }
+}

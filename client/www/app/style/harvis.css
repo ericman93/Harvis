@@ -19,13 +19,13 @@ ion-content::before {
   background-size: cover; }
 
 ion-content.night::before {
-  background-image: url("../homepage/images/night.gif"); }
+  background-image: url("../../images/night.gif"); }
 
 ion-content.Rain::before {
-  background-image: url("../homepage/images/rain.gif"); }
+  background-image: url("../../images/rain.gif"); }
 
 ion-content.Clouds::before {
-  background-image: url("../homepage/images/cloudy.gif"); }
+  background-image: url("../../images/cloudy.gif"); }
 
 ion-content #fact {
   padding-top: 10%; }
@@ -67,6 +67,35 @@ ion-content #weather {
       border-radius: 50%;
       color: white;
       font-size: 300%; }
+
+#modes-content::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../images/sky.gif"); }
+
+#modes-content ion-content {
+  padding: 0; }
+  #modes-content ion-content .card {
+    padding: 0; }
+    #modes-content ion-content .card .mode-icon {
+      text-align: center;
+      font-size: 500%; }
+    #modes-content ion-content .card.romantic .mode-icon {
+      background-color: #a92d2d; }
+      #modes-content ion-content .card.romantic .mode-icon .icon {
+        color: white; }
+    #modes-content ion-content .card.work .mode-icon {
+      background-color: #7f7fdd; }
+    #modes-content ion-content .card.morning .mode-icon {
+      background-color: #efef79; }
 
 ion-content {
   padding: 15%; }

@@ -8,8 +8,9 @@ angular.module('harvis.homepage', []);
 angular.module('harvis.lights', []);
 angular.module('harvis.alarms', []);
 angular.module('harvis.menu', []);
+angular.module('harvis.modes', []);
 angular.module('harvis.core', ['harvis.menu']);
-angular.module('harvis', ['ionic', 'harvis.homepage', 'harvis.alarms', 'harvis.lights', 'harvis.core'])
+angular.module('harvis', ['ionic', 'harvis.homepage', 'harvis.alarms', 'harvis.lights', 'harvis.modes', 'harvis.core'])
 
   .run(function ($ionicPlatform) {
     $ionicPlatform.ready(function () {
@@ -53,6 +54,16 @@ angular.module('harvis', ['ionic', 'harvis.homepage', 'harvis.alarms', 'harvis.l
           'menuContent': {
             templateUrl: 'app/lights/lights.html',
             controller: 'LightsCtrl'
+          }
+        }
+      })
+
+      .state('app.modes', {
+        url: '/modes',
+        views: {
+          'menuContent': {
+            templateUrl: 'app/modes/modes.html',
+            controller: 'ModesCtrl'
           }
         }
       })
