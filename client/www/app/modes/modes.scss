@@ -35,6 +35,15 @@
         }
       }
 
+      &.workout {
+        .mode-icon {
+          background-color: black;
+          .icon {
+            color: yellow;
+          }
+        }
+      }
+
       &.dev {
         .mode-icon {
           background-color: #7f7fdd;

@@ -92,6 +92,10 @@ ion-content #weather {
       background-color: #a92d2d; }
       #modes-content ion-content .card.romantic .mode-icon .icon {
         color: white; }
+    #modes-content ion-content .card.workout .mode-icon {
+      background-color: black; }
+      #modes-content ion-content .card.workout .mode-icon .icon {
+        color: yellow; }
     #modes-content ion-content .card.dev .mode-icon {
       background-color: #7f7fdd; }
     #modes-content ion-content .card.morning .mode-icon {
