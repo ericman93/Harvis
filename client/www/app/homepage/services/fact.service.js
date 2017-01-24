@@ -6,7 +6,7 @@ angular.module('harvis.homepage')
 
         $http.get("http://" + SERVER_URL + '/fact')
           .then(function (res) {
-            deferred.resolve(res.data.fact)
+            deferred.resolve(res.data)
           }, function (error) {
             deferred.resolve([])
           });

@@ -8,6 +8,7 @@ def get_fun_fact():
 	fact = FunFactProvider().get_fact()
 	
 	return jsonify({
-		'fact': fact
+		'fact': fact[0],
+		'dir': fact[1]
 	})
 
