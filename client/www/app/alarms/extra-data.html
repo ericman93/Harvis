@@ -1,0 +1,29 @@
+<ion-modal-view>
+  <ion-content>
+    <div>
+      <div class="list">
+
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Mode
+          </div>
+          <select ng-model="item.mode">
+            <option value="">None</option>
+            <option ng-repeat="mode in modes">{{mode}}</option>
+          </select>
+        </label>
+
+        <label class="item item-input item-select">
+          <div class="input-label">
+            If Rain
+          </div>
+          <select>
+            <option>None</option>
+            <option ng-repeat="mode in modes" value="mode">{{mode | titleCase}}</option>
+          </select>
+        </label>
+
+      </div>
+    </div>
+  </ion-content>
+</ion-modal-view>

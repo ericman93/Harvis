@@ -5,10 +5,18 @@
 @import "../modes/modes";
 
 ion-content{
-  padding: 15%;
+  padding: 10%;
 
   &.has-header{
     padding-top: 10%;
     overflow-y: hidden;
+  }
+}
+
+ion-modal-view{
+  height: 10px;
+
+  ion-content {
+    padding: 0;
   }
 }

@@ -98,7 +98,12 @@ ion-content #weather {
       background-color: #efef79; }
 
 ion-content {
-  padding: 15%; }
+  padding: 10%; }
   ion-content.has-header {
     padding-top: 10%;
     overflow-y: hidden; }
+
+ion-modal-view {
+  height: 10px; }
+  ion-modal-view ion-content {
+    padding: 0; }

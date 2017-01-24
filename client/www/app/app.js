@@ -81,4 +81,5 @@ angular.module('harvis', ['ionic', 'harvis.homepage', 'harvis.alarms', 'harvis.l
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/app/homepage');
   })
-  .constant('SERVER_URL', '127.0.0.1:5000');
+  .value('SERVER_URL', '127.0.0.1:5000')
+  .value('MODES', ['romantic', 'work', 'morning']);
