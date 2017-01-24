@@ -3,7 +3,8 @@ angular.module('harvis.core')
     return function(input) {
       var modeIcons = {
         'romantic': 'ion-heart',
-        'work': 'ion-code',
+        'dev': 'ion-code',
+        'workout': 'ion-flash',
         'morning': 'ion-ios-alarm'
       };
 

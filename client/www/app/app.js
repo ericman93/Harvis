@@ -82,4 +82,4 @@ angular.module('harvis', ['ionic', 'harvis.homepage', 'harvis.alarms', 'harvis.l
     $urlRouterProvider.otherwise('/app/homepage');
   })
   .value('SERVER_URL', '127.0.0.1:5000')
-  .value('MODES', ['romantic', 'work', 'morning']);
+  .value('MODES', ['romantic', 'workout', 'dev', 'morning']);
