@@ -6,7 +6,8 @@ class FunFactProvider(object):
 	def __init__(self):
 		self.providers = [
 			#RandomYearFact()
-			ReditTILProvider()
+			ReditTILProvider(),
+			SnipFact()
 		]
 
 	def get_fact(self):
@@ -18,6 +19,14 @@ class RandomYearFact(object):
 		response = requests.get('http://numbersapi.com/random/date')
 		return response.text
 		
+
+class SnipFact(object):
+	def get_fact(self):
+		feed = feedparser.parse('https://snip.today/content/rss/')
+		items = feed['items']
+
+		return items[randint(0, len(items) - 1)]['title']
+
 
 class ReditTILProvider(object):
 	def get_fact(self):
