@@ -1,10 +1,10 @@
 angular.module('harvis.homepage')
-  .factory('Weather', ['$q', '$http', 'SERVER_URL',
-    function ($q, $http, SERVER_URL) {
+  .factory('Weather', ['$q', '$http', 'Core',
+    function ($q, $http, Core) {
       function getWeather() {
         var deferred = $q.defer();
 
-        $http.get("http://" + SERVER_URL + '/weather')
+        $http.get("http://" + Core.host + '/weather')
           .then(function (res) {
             deferred.resolve(res.data)
           }, function (error) {

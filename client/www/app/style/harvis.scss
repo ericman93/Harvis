@@ -3,13 +3,14 @@
 @import "../homepage/homepage";
 @import "../alarms/alarms";
 @import "../modes/modes";
+@import "../settings/settings";
 
 ion-content{
   padding: 10%;
 
   &.has-header{
     padding-top: 10%;
-    overflow-y: hidden;
+    //overflow-y: hidden;
   }
 }
 

@@ -101,11 +101,13 @@ ion-content #weather {
     #modes-content ion-content .card.morning .mode-icon {
       background-color: #efef79; }
 
+#settings-content ion-content {
+  padding: 0; }
+
 ion-content {
   padding: 10%; }
   ion-content.has-header {
-    padding-top: 10%;
-    overflow-y: hidden; }
+    padding-top: 10%; }
 
 ion-modal-view {
   height: 10px; }

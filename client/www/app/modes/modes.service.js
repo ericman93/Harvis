@@ -1,10 +1,10 @@
 angular.module('harvis.modes')
-  .factory('Modes', ['$q', '$http', 'SERVER_URL',
-    function ($q, $http, SERVER_URL) {
+  .factory('Modes', ['$q', '$http', 'Core',
+    function ($q, $http, Core) {
       function setMode(mode) {
         var deferred = $q.defer();
 
-        $http.post("http://" + SERVER_URL + '/mode/' + mode)
+        $http.post("http://" + Core.host + '/mode/' + mode)
           .then(function (res) {
             deferred.resolve(res.data)
           }, function (error) {
@@ -17,7 +17,7 @@ angular.module('harvis.modes')
       function stopMode() {
         var deferred = $q.defer();
 
-        $http.delete("http://" + SERVER_URL + '/mode/')
+        $http.delete("http://" + Core.host + '/mode/')
           .then(function (res) {
             deferred.resolve(res.data)
           }, function (error) {
