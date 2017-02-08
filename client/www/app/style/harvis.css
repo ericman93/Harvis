@@ -97,6 +97,15 @@ ion-content #weather {
     #modes-content ion-content .card.morning .mode-icon {
       background-color: #efef79; }
 
+#lights-content {
+  background-color: #241a44; }
+  #lights-content ion-content {
+    padding: 0; }
+    #lights-content ion-content .card {
+      padding: 0;
+      text-align: center;
+      font-weight: bold; }
+
 ion-content {
   padding: 15%; }
   ion-content.has-header {

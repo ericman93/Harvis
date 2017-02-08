@@ -1,5 +1,12 @@
-<ion-view view-title="Lights">
+<ion-view view-title="Lights" id="lights-content">
   <ion-content>
-    Lights!
+    <div id="light-colors" class="row responsive-lg">
+      <div class="col card" ng-repeat="color in colors">
+        <div class="item item-text-wrap color" style="background-color: #{{color.rgb}}">
+          {{color.name}}
+        </div>
+      </div>
+    </div>
+
   </ion-content>
 </ion-view>
