@@ -21,8 +21,5 @@ angular.module('harvis.core')
         host: host
       };
 
-      service
+      return service
     }]);
-/**
- * Created by Eric on 24/01/2017.
- */

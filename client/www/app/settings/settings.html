@@ -1,0 +1,20 @@
+<ion-view view-title="Settings" id="settings-content">
+  <ion-content>
+
+    <div class="list">
+	  <label class="item item-input item-stacked-label">
+	    <span class="input-label">Host</span>
+	    <input type="text" placeholder="Please enter host" ng-model="server.host">
+	  </label>
+	  <label class="item item-input item-stacked-label">
+	    <span class="input-label">Port</span>
+	    <input type="number" placeholder="Please enter port" ng-model="server.port">
+	  </label>
+	</div>
+
+	<button class="button button-full button-positive" ng-click="save()">
+	  Save
+	</button>
+
+  </ion-content>
+</ion-view>
