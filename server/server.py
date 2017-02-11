@@ -2,6 +2,7 @@ from flask import Flask, jsonify
 from flask_cors import CORS, cross_origin
 from routes.weather_api import weather_api
 from routes.facts_api import fact_api
+from routes.alarm_api import alarm_api
 from routes.modes_api import mode_api
 from routes.core_api import core_api
 
@@ -10,6 +11,7 @@ def create_app():
 
     app.register_blueprint(weather_api, url_prefix='/weather')
     app.register_blueprint(fact_api, url_prefix='/fact')
+    app.register_blueprint(alarm_api, url_prefix='/alarm')
     app.register_blueprint(mode_api, url_prefix='/mode')
     app.register_blueprint(core_api)
     
