@@ -1,20 +1,7 @@
 angular.module('harvis.modes')
-  .controller('ModesCtrl', ['$scope', 'Modes',
-      function ($scope, Modes) {
-        $scope.modes = [
-          {
-            name: 'romantic',
-            icon: 'ion-heart'
-          },
-          {
-            name: 'work',
-            icon: 'ion-code'
-          },
-          {
-            name: 'morning',
-            icon: 'ion-ios-alarm'
-          }
-        ];
+  .controller('ModesCtrl', ['$scope', 'MODES', 'Modes',
+      function ($scope, MODES, Modes) {
+        $scope.modes = MODES;
 
         $scope.setMode = function (mode) {
           Modes.setMode(mode);

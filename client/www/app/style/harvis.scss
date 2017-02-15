@@ -6,10 +6,18 @@
 @import "../lights/lights";
 
 ion-content{
-  padding: 15%;
+  padding: 10%;
 
   &.has-header{
     padding-top: 10%;
-    overflow-y: hidden;
+    //overflow-y: hidden;
+  }
+}
+
+ion-modal-view{
+  height: 10px;
+
+  ion-content {
+    padding: 0;
   }
 }

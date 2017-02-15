@@ -7,9 +7,9 @@
     </div>
   </label>
   <div class="extra-data">
-    <div ng-if="item.rain">
-      <span>If rain: </span><span>{{item.rain}}</span>
-    </div>
+    <span ng-click="editExtraData()" class="collapse icon ion-edit"></span>
+    <div ng-if="item.rain"><span>If rain: {{item.rain}}</span></div>
+    <div ng-if="item.mode"><span>Mode: <span class="icon" ng-class="item.mode | modeIcon"/> {{item.mode | titleCase}}</span></div>
   </div>
 </div>
 

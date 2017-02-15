@@ -6,12 +6,12 @@
     </button>
 
     <div id="modes" class="row responsive-lg">
-      <div class="col card" ng-repeat="mode in modes" ng-class="mode.name" ng-click="setMode(mode.name)">
+      <div class="col card" ng-repeat="mode in modes" ng-class="mode" ng-click="setMode(mode)">
         <div class="item item-text-wrap mode-icon">
-          <span class="icon" ng-class="mode.icon" />
+          <span class="icon" ng-class="mode | modeIcon" />
         </div>
         <div class="item item-divider">
-          {{mode.name}}
+          {{mode | titleCase}}
         </div>
       </div>
     </div>
