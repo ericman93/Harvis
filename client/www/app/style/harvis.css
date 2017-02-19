@@ -1,10 +1,14 @@
 ion-side-menu.menu .bar-header {
-  background-color: #0a9dc7; }
-  ion-side-menu.menu .bar-header .title {
-    color: white; }
+  background-color: #0a9dc7;
+}
+
+ion-side-menu.menu .bar-header .title {
+  color: white;
+}
 
 ion-side-menu ion-content.has-header {
-  padding: 0; }
+  padding: 0;
+}
 
 ion-content::before {
   content: ' ';
@@ -16,57 +20,82 @@ ion-content::before {
   height: 100%;
   opacity: 0.8;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+}
 
 ion-content.night::before {
-  background-image: url("../../images/night.gif"); }
+  background-image: url("../../images/night.gif");
+}
 
 ion-content.Rain::before {
-  background-image: url("../../images/rain.gif"); }
+  background-image: url("../../images/rain.gif");
+}
 
 ion-content.Clouds::before {
-  background-image: url("../../images/cloudy.gif"); }
+  background-image: url("../../images/cloudy.gif");
+}
 
 ion-content #fact {
-  padding-top: 10%; }
+  padding-top: 10%;
+}
 
 ion-content #weather {
-  padding-top: 10%; }
-  ion-content #weather #temperature {
-    font-size: 500%; }
-  ion-content #weather #desc {
-    font-size: 200%;
-    padding-top: 10px; }
+  padding-top: 10%;
+}
+
+ion-content #weather #temperature {
+  font-size: 500%;
+}
+
+ion-content #weather #desc {
+  font-size: 200%;
+  padding-top: 10px;
+}
 
 #alarms-content {
   background-color: #241a44;
-  color: white; }
-  #alarms-content .scroll {
-    height: 100%; }
-    #alarms-content .scroll .alarm hr {
-      margin: 20px 0 20px 0;
-      opacity: 0.3; }
-    #alarms-content .scroll .alarm .extra-data {
-      padding-top: 10px; }
-    #alarms-content .scroll .alarm .time {
-      font-size: 400%; }
-    #alarms-content .scroll .alarm .toggle {
-      float: right; }
-      #alarms-content .scroll .alarm .toggle input:checked + .track {
-        background-color: #6b46e5;
-        border-color: #6b46e5; }
-    #alarms-content .scroll #add-alarm {
-      position: fixed;
-      bottom: 0;
-      left: calc(50% - 30px);
-      height: 60px;
-      width: 60px;
-      line-height: 50px;
-      text-align: center;
-      background-color: #6b46e5;
-      border-radius: 50%;
-      color: white;
-      font-size: 300%; }
+  color: white;
+}
+
+#alarms-content .scroll {
+  height: 100%;
+}
+
+#alarms-content .scroll .alarm hr {
+  margin: 20px 0 20px 0;
+  opacity: 0.3;
+}
+
+#alarms-content .scroll .alarm .extra-data {
+  padding-top: 10px;
+}
+
+#alarms-content .scroll .alarm .time {
+  font-size: 400%;
+}
+
+#alarms-content .scroll .alarm .toggle {
+  float: right;
+}
+
+#alarms-content .scroll .alarm .toggle input:checked + .track {
+  background-color: #6b46e5;
+  border-color: #6b46e5;
+}
+
+#alarms-content .scroll #add-alarm {
+  position: fixed;
+  bottom: 0;
+  left: calc(50% - 30px);
+  height: 60px;
+  width: 60px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #6b46e5;
+  border-radius: 50%;
+  color: white;
+  font-size: 300%;
+}
 
 #modes-content::before {
   content: ' ';
@@ -79,37 +108,76 @@ ion-content #weather {
   opacity: 0.8;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../../images/sky.gif"); }
+  background-image: url("../../images/sky.gif");
+}
 
 #modes-content ion-content {
-  padding: 0; }
-  #modes-content ion-content .card {
-    padding: 0; }
-    #modes-content ion-content .card .mode-icon {
-      text-align: center;
-      font-size: 500%; }
-    #modes-content ion-content .card.romantic .mode-icon {
-      background-color: #a92d2d; }
-      #modes-content ion-content .card.romantic .mode-icon .icon {
-        color: white; }
-    #modes-content ion-content .card.workout .mode-icon {
-      background-color: black; }
-      #modes-content ion-content .card.workout .mode-icon .icon {
-        color: yellow; }
-    #modes-content ion-content .card.dev .mode-icon {
-      background-color: #7f7fdd; }
-    #modes-content ion-content .card.morning .mode-icon {
-      background-color: #efef79; }
+  padding: 0;
+}
+
+#modes-content ion-content .card {
+  padding: 0;
+}
+
+#modes-content ion-content .card .mode-icon {
+  text-align: center;
+  font-size: 500%;
+}
+
+#modes-content ion-content .card.romantic .mode-icon {
+  background-color: #a92d2d;
+}
+
+#modes-content ion-content .card.romantic .mode-icon .icon {
+  color: white;
+}
+
+#modes-content ion-content .card.workout .mode-icon {
+  background-color: black;
+}
+
+#modes-content ion-content .card.workout .mode-icon .icon {
+  color: yellow;
+}
+
+#modes-content ion-content .card.dev .mode-icon {
+  background-color: #7f7fdd;
+}
+
+#modes-content ion-content .card.morning .mode-icon {
+  background-color: #efef79;
+}
+    
+#lights-content {
+  background-color: #241a44;
+}
+
+#lights-content ion-content {
+  padding: 0;
+}
+
+#lights-content ion-content .card {
+  padding: 0;
+  text-align: center;
+  font-weight: bold;
+}
 
 #settings-content ion-content {
-  padding: 0; }
+  padding: 0;
+}
 
 ion-content {
-  padding: 10%; }
-  ion-content.has-header {
-    padding-top: 10%; }
+  padding: 10%;
+}
+
+ion-content.has-header {
+  padding-top: 10%;
+}
 
 ion-modal-view {
-  height: 10px; }
-  ion-modal-view ion-content {
-    padding: 0; }
+  height: 10px;
+}
+
+ion-modal-view ion-content {
+  padding: 0;
+}
