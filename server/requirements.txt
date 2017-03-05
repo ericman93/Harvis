@@ -3,3 +3,5 @@ requests==2.12.4
 flask-cors==3.0.2
 PyYAML==3.12
 feedparser==5.2.1
+youtube-dl==2017.3.5
+pafy==0.5.3.1

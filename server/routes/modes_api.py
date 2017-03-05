@@ -1,12 +1,12 @@
 from flask import Blueprint, jsonify, request
-import output.audio as audio
+from output.audio import youtube
 import output.lights as lights
 
 mode_api = Blueprint('mode_api', 'mode_api')
 
 @mode_api.route('/<mode>', methods=['POST'])
 def set_mode(mode):
-	audio.play_playlist(mode)
+	youtube.play_playlist(mode)
 
 	if mode == 'romantic':
 		lights.on()
@@ -16,6 +16,6 @@ def set_mode(mode):
 
 @mode_api.route('/', methods=['DELETE'])
 def stop_mode():
-	audio.stop()
+	youtube.stop()
 	lights.off()
 	return jsonify()
