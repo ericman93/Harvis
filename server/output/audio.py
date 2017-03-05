@@ -45,7 +45,7 @@ class Youtube(object):
 			'dev': 'https://www.youtube.com/playlist?list=PLOkT4Kw_fkkU0agDS5usF9KNmtHmWEdw4'
 		}
 
-		self.playlists = self.__get_best_links(playlist)
+		self.playlists = self.__get_best_links(playlists)
 
 		self.process_id = None
 
@@ -65,7 +65,7 @@ class Youtube(object):
 
 	def __get_best_links(self, playlists):
 		playlist_urls = {}
-		for name, link in self.playlists.iteritems():
+		for name, link in playlists.iteritems():
 			playlist = pafy.get_playlist(link)
 
 			playlist_urls[name] = [item['pafy'].getbest().url for item in playlist['items']]
