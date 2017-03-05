@@ -40,7 +40,9 @@ class LocalFile(object):
 class Youtube(object):
 	def __init__(self):
 		self.playlists = {
-			'morning': 'https://www.youtube.com/watch?v=MGAjlqg5URg&list=PLOkT4Kw_fkkXxhKh1AWp40N_g4XVm4TAL'
+			'morning': 'https://www.youtube.com/watch?v=MGAjlqg5URg&list=PLOkT4Kw_fkkXxhKh1AWp40N_g4XVm4TAL',
+			'romantic': 'https://www.youtube.com/playlist?list=PLOkT4Kw_fkkUiJzrmXrLu0-sQ15MpornY',
+			'dev': 'https://www.youtube.com/playlist?list=PLOkT4Kw_fkkU0agDS5usF9KNmtHmWEdw4'
 		}
 
 	def play_playlist(self, playlist_name):
@@ -49,12 +51,15 @@ class Youtube(object):
 		urls = [item['pafy'].getbest().url for item in playlist['items']]
 		random.shuffle(urls)
 
+		self.stop()
+
 		process = subprocess.Popen(['mpv', '--no-video', urls[0]])
 		self.process_id = process.pid 
 		
 
 	def stop(self):
-		os.system("kill %s" % self.process_id)
+		if self.process_id is not None:
+			os.system("kill %s" % self.process_id)
 
 
 # local_fiels = LocalFile()
