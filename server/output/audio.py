@@ -8,12 +8,14 @@ import random
 import subprocess
 import os 
 
+
 class LocalFile(object):
 	def __init__(self):
-		self.mixer.init()
+		mixer.init()
 		self.fade_timout = 700
 
 	def play_playlist(self, playlist):
+
 		playlist_dir = os.path.join('data', 'audio', playlist)
 		files = [os.path.join(playlist_dir, f) for f in os.listdir(playlist_dir) if os.path.isfile(os.path.join(playlist_dir, f)) and f.endswith('.mp3')]
 		
@@ -25,17 +27,17 @@ class LocalFile(object):
 		# p.join()
 
 	def stop(self):
-		self.mixer.music.fadeout(self.fade_timout)
+		mixer.music.fadeout(self.fade_timout)
 
 	def __play_songs__(self, songs):
-		self.mixer.music.fadeout(self.fade_timout)
+		mixer.music.fadeout(self.fade_timout)
 
 		song = songs[0]
-		self.mixer.music.load(os.path.realpath(song))
-		self.mixer.music.play()
+		mixer.music.load(os.path.realpath(song))
+		mixer.music.play()
 
 		for song in songs[1:]:
-			self.mixer.music.queue(os.path.realpath(song))
+			mixer.music.queue(os.path.realpath(song))
 
 class Youtube(object):
 	def __init__(self):
@@ -75,8 +77,8 @@ class Youtube(object):
 
 #local_fiels = LocalFile()
 #youtube = Youtube()
-audio_manager = LocalFile
+audio_manager = LocalFile()
 
 def stop():
-	youtube.stop()
+	audio_manager.stop()
 	# local_fiels.stop()
