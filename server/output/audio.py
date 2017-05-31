@@ -40,7 +40,7 @@ class LocalFile(object):
 class Youtube(object):
 	def __init__(self):
 		playlists = {
-			'morning': 'https://www.youtube.com/watch?v=MGAjlqg5URg&list=PLOkT4Kw_fkkXxhKh1AWp40N_g4XVm4TAL',
+			'morning': 'https://www.youtube.com/playlist?list=PLOkT4Kw_fkkXxhKh1AWp40N_g4XVm4TAL',
 			'romantic': 'https://www.youtube.com/playlist?list=PLOkT4Kw_fkkUiJzrmXrLu0-sQ15MpornY',
 			'dev': 'https://www.youtube.com/playlist?list=PLOkT4Kw_fkkU0agDS5usF9KNmtHmWEdw4'
 		}
@@ -73,8 +73,9 @@ class Youtube(object):
 		return playlist_urls
 
 
-# local_fiels = LocalFile()
-youtube = Youtube()
+#local_fiels = LocalFile()
+#youtube = Youtube()
+audio_manager = LocalFile
 
 def stop():
 	youtube.stop()
